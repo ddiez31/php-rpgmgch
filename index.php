@@ -13,15 +13,21 @@
 
 <?php
 
-require 'class/Autoloader.php';
+// require 'class/Autoloader.php';
 
-Autoloader::register();
-Autoloader::autoload(User);
-Autoloader::autoload(Client);
+// Autoloader::register();
+// Autoloader::autoload(User);
+// Autoloader::autoload(Client);
 
-include 'users.php';
+// include 'users.php';
+
+// include 'userTable.php';
 
 ?>
+
+<h2><a href="userTable.php">Liste clients</a></h2>
+<h2><a href="productTable.php">Liste produits</a></h2>
+
 
 </body>
 </html>
