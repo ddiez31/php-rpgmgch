@@ -42,7 +42,28 @@ foreach($vegetables as $vegetable) {
       <td>'.$vegetable->getExpiresAt().'</td>
       </tr>';
 }
- echo'</tbody></table>';
+ echo '</tbody></table>';
+
+echo '<hr>';
+
+echo '<table class="ui table">
+      <thead><tr>
+      <th></th>
+      <th>Number</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Brand</th>
+      </tr></thead>
+      <tbody>';
+foreach($cloths as $cloth) {
+  echo '<td class="collapsing"></td>
+      <td>'.$cloth->getId().'</td>
+      <td>'.$cloth->getName().'</td>
+      <td>'.$cloth->getPrice().'</td>
+      <td>'.$cloth->getBrand().'</td>
+      </tr>';
+}
+ echo '</tbody></table>';
 
 
 ?>

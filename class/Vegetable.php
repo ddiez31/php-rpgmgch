@@ -3,7 +3,8 @@
 class Vegetable extends Product {
     private $productorName;
     private $expiresAt;
-    public function __construct($productorName, $expiresAt) {
+    public function __construct($id, $name, $price, $productorName, $expiresAt) {
+	 	parent::__construct($id, $name, $price);
         $this->productorName = $productorName;
         $this->expiresAt = $expiresAt;
     }
